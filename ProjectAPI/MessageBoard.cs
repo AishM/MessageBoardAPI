@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjectAPI
 {
@@ -12,8 +13,24 @@ namespace ProjectAPI
 
         //public string Summary { get; set; }
         public long Id { get; set; }
+        [Required]
         public string MessageText { get; set; }
         public string MessageTopic { get; set; }
+
+        public Boolean Flagged { get; set; }
+
+        public string Createdby { get; set; }
+        /*public Boolean Flagged {
+            get
+            {
+                return flagged;
+            }
+            set
+            {
+                this.flagged = false;
+            }
+                
+         }*/
 
 
     }
