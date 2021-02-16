@@ -19,7 +19,10 @@ namespace ProjectAPI
 
         public Boolean Flagged { get; set; }
 
-        public string Createdby { get; set; }
+        public string PostedByRole { get; set; }
+
+        public string PostedByName { get; set; }
+
         /*public Boolean Flagged {
             get
             {
